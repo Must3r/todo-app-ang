@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="card">
+    <h1>{{ title }}</h1>
+    <app-add-task (addTaskEvent)="addTask($event)"></app-add-task>
+    <app-task-list [list]="todos"></app-task-list>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->

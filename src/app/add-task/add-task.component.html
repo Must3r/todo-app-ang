@@ -1,0 +1,8 @@
+<div class="add-task card card--white">
+  <form (ngSubmit)="addTask({ title: taskText, completed: false })">
+    <input [(ngModel)]="taskText" type="text" [ngModelOptions]="{standalone: true}" />
+    <button type="submit" [disabled]="!taskText.length">
+      Add
+    </button>
+  </form>
+</div>
