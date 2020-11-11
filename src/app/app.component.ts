@@ -10,24 +10,17 @@ import { TODOS } from './mock/todos'
 })
 export class AppComponent {
 
-  // ngOnInit() {
-  //   this.getUsers();
-  // }
-
   title = 'TODO app';
 
   todos: Todo[] = TODOS;
+
+  count = 1;
 
   addTask(task: Todo): void {
     this.todos.push(task);
   }
 
-  // async getUsers() {
-  //   await fetch('https://jsonplaceholder.typicode.com/todos')
-  //     .then(response => response.json())
-  //     .then(json => {
-  //       this.todos = json
-  //       console.log(this.todos)
-  //     })
-  // }
+  deleteTask(task: number): void {
+    this.todos.splice(task, this.count);
+  }
 }
