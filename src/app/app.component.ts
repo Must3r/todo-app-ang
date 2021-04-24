@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Todo } from './models/Todo';
-import { TODOS } from './mock/todos'
+import { TODOS } from './mock/todos';
 
 
 @Component({
